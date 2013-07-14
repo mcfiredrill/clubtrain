@@ -11,7 +11,7 @@ describe ClubTrain do
     stub_request(:get, 'http://2-5-d.jp/schedule/20130711/').to_return(body: twofived)
     stub_request(:get, 'http://club-mogra.jp/2013/07/11/').to_return(body: mogra)
     stub_request(:get, 'http://club-mogra.jp/2013/07/11/1669/').to_return(body: mogra_event)
-    c = ClubTrain.new(TwoFiveD, Mogra)
+    c = ClubTrain.new
     events = c.for_date(Date.new(2013,07,11))
     events.each do |event|
       puts event.info
