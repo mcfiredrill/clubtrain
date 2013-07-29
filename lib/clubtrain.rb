@@ -3,7 +3,7 @@ require 'clubtrain/mogra'
 require 'clubtrain/25d'
 
 module ClubTrain
-  class ClubTrain
+  class Train
     attr_accessor :clubs
     def initialize clubs=[TwoFiveD,Mogra]
       @clubs = clubs
