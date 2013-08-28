@@ -8,7 +8,7 @@ module ClubTrain
       info = page.css("div#schedule-single section").first.text
       flyer = page.css("article#single-article.article-medium img.aligncenter.size-large").first.attributes["src"].value
       title = page.css("header#article-header h1").text
-      Event.new(info, flyer, title, date)
+      Event.new(info, flyer, title, date, :twofived)
     end
   end
 end

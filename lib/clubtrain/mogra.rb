@@ -13,7 +13,7 @@ module ClubTrain
       event_page = Nokogiri::HTML(open("#{BASE_URL}#{link}"))
       flyer = event_page.css("div.event img").first.attributes["src"].value
       info = event_page.css("div.event div.data").text
-      Event.new(info, flyer, title, date)
+      Event.new(info, flyer, title, date, :mogra)
     end
   end
 end
