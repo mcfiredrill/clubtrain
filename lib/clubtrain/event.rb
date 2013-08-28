@@ -1,6 +1,6 @@
 module ClubTrain
   class Event
-    attr_accessor :flyer, :info, :title, :date
+    attr_accessor :flyer, :info, :title, :date, :club
     def initialize info, flyer, title, date, club
       @info = info
       @flyer = flyer
