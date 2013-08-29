@@ -20,6 +20,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = "1.8.25"
   s.summary = "Scrape event data from various Tokyo area venues/clubs."
 
+  s.add_dependency "nokogiri"
+
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
